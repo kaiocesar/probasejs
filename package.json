@@ -1,0 +1,11 @@
+{
+  "name": "ntalk",
+  "description": "Projeto Ntalk do livro Node.js aplicações web de alta escalabilidade.",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "express": "3.x",
+    "mysql": "^2.4.2",
+    "sequelize": "^1.7.9"
+  }
+}
