@@ -1,12 +1,19 @@
 Project Base
 ============
 
-Projeto Base desenvolvido em :
+Autor: Kaio Cesar (vulgo Mano)
 
-* [Node.js](Node.js)
+Projeto simples com área administrativa, cadastro de usuarios, tarefas e autenticação de usuário.
 
-* Express.js
 
-* Sequelize.js com mysql
+As ferramentas utilizadas no projeto são:
 
-* Angular.js
+* [Node.js](http://nodejs.org/) versão 10.30
+
+* [Express.js](http://expressjs.com/4x/api.html)
+
+* [Sequelize.js com mysql](http://sequelizejs.com/articles/getting-started)
+
+* [Angular.js](https://angularjs.org/)
+
+* [Passport.js](http://passportjs.org/)
