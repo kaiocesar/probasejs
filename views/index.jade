@@ -1,9 +1,39 @@
-doctype html
-html(lang="en")
-	head
-		title="Ntalk"
-		script(type="/assets/bootstrap.js")
+extends ./layout.jade
 
-	body
-		h1 Jade - Table Engine
-		p=users
+block title
+	title Project Base - Home page
+
+block content	
+	div(class="jumbotron")
+		div(class="container")
+			h1 Project Base
+			p Esse projeto tem o intuito de reunir todas as principais ferramentas instaladas e prontas para serem utilizadas.
+
+
+	div(class="container")
+		div(class="row placeholders tools-project")
+			div(class="col-xs-6 col-sm-3 placeholder")
+				img(alt="200x200" class="img-responsive" data-src="holder.js/200x200/auto/sky", src="/assets/img/logo.svg")
+				h4	Node.js
+				span BACK-END
+
+			div(class="col-xs-6 col-sm-3 placeholder")
+				img(alt="200x200" class="img-responsive" data-src="holder.js/200x200/auto/sky", src="/assets/img/express.png")
+				h4	Express.js
+				span MVC
+
+			div(class="col-xs-6 col-sm-3 placeholder")
+				img(alt="200x200" class="img-responsive" data-src="holder.js/200x200/auto/sky", src="/assets/img/logo-sequelize.png")
+				h4	Sequelize.js
+				span ORM			
+
+			div(class="col-xs-6 col-sm-3 placeholder")
+				img(alt="200x200" class="img-responsive" data-src="holder.js/200x200/auto/sky", src="/assets/img/AngularJS-large.png")
+				h4	Angular.js
+				span FRONT-END
+
+		div(class="row placeholders")
+			div(class="col-xs-6 col-sm-3 placeholder")
+				img(alt="200x200" class="img-responsive" data-src="holder.js/200x200/auto/sky", src="/assets/img/passport-logo.png")
+				h4	Passport.js
+				span AUTHENTICATION
