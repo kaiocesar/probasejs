@@ -1,12 +1,13 @@
-Project Base
+ProBase.js
 ============
 
 Autor: Kaio Cesar (vulgo Mano)
 
-Projeto simples com área administrativa, cadastro de usuarios, tarefas e autenticação de usuário.
+Probase é uma ferramenta estatica de uso comum para quem precisa ter em mãos algo pronto para uso
+de forma que necessite de apenas alguns pequenos ajustes.
 
 
-As ferramentas utilizadas no projeto são:
+### As ferramentas utilizadas no projeto são
 
 * [Node.js](http://nodejs.org/) versão 10.30
  
@@ -17,3 +18,9 @@ As ferramentas utilizadas no projeto são:
 * [Angular.js](https://angularjs.org/) versão 1.2.22
 
 * [Passport.js](http://passportjs.org/)
+
+
+### Como usar ?
+Ao fazer o clone para sua máquina, em seguida você lança os seguintes comandos:
+`$ npms install`
+
