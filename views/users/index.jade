@@ -1,8 +1,30 @@
-doctype html
-html(lang="en")
-	head
-		title=title
+extends ../layout-admin.jade
 
+block title
+	title Admin area
 
-	body
+block content	
+	div(class="container")
 		h1 All users
+
+		table(class="table table-responsive")
+			thead
+				tr
+					th(class="text-center") #
+					th(class="text-center") Name
+					th(class="text-center") User
+					th(class="text-center") Email
+					th(class="text-center") Action
+
+			tbody
+				each user in users
+					tr(class="text-center")
+						td=user.id
+						td=user.name
+						td=user.username
+						td=user.email
+						td 
+							a(href="/users/edit/"+user.id, class="btn btn-default btn-xs")
+								span(class="glyphicon glyphicon-pencil")
+							a(href="/users/delete/"+user.id, class="btn btn-default btn-xs")
+								span(class="glyphicon glyphicon-trash")

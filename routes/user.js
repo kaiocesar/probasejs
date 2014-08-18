@@ -13,8 +13,20 @@ exports.index = function(req, res) {
 		include: [ db.Task]
 	}).success(function(users){
 		res.render('users/index', {
-			title: "Ntalk - All users",
+			title: "All users",
 			users: users
 		});
 	});
 };
+
+exports.add = function (req, res) {
+	res.render('users/add', {
+		title: "Add a new user"
+	})
+};
+
+exports.edit = function (req, res) {
+	res.render('users/edit', {
+		title : "Edit a user"
+	});
+}

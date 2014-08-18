@@ -27,6 +27,10 @@ if ('development' === app.get('env')) {
 
 app.get('/', routes.index);
 app.get('/users', user.index);
+app.get('/users/add', user.add);
+app.get('/users/edit/:user_id', user.edit);
+
+
 app.post('/users/create', user.create);
 app.post('/users/:user_id/tasks/create', task.create);
 app.post('/users/:user_id/tasks/:task_id/destroy', task.destroy);
