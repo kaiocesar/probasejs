@@ -1,0 +1,30 @@
+extends ../layout-default.jade
+
+block title 
+	title Probase - Contacts
+
+block content
+
+	div(class="container")
+		h1	Contacts
+
+		form(class="form", method="post", action="/contacts")
+			div(class="row")
+				div(class="form-group")
+					div(class="col-md-6 col-xs-12")
+						label Name
+						input(type="text",name="name", class="form-control")
+
+			div(class="row")							
+				div(class="form-group")
+					div(class="col-md-6 col-xs-12")
+						label Email
+						input(type="text",name="email", class="form-control")
+
+			div(class="row")							
+				div(class="form-group")
+					div(class="col-md-6 col-xs-12")
+						label Message
+						textarea(name="message", class="form-control", rows="5")
+
+			button(class="btn btn-default btn-success pull-left", type="submit") Send

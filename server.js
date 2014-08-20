@@ -2,6 +2,7 @@ var express = require('express')
 	, routes	= require('./routes')
 	, user	= require('./routes/user')
 	, task	= require('./routes/task')
+	, home  = require('./routes/home')
 	, http	= require('http')
 	, path	= require('path')
 	, db	= require('./models');
@@ -29,11 +30,14 @@ app.get('/', routes.index);
 app.get('/users', user.index);
 app.get('/users/add', user.add);
 app.get('/users/edit/:user_id', user.edit);
+app.get('/contacts', home.contacts);
 
 
 app.post('/users/create', user.create);
 app.post('/users/:user_id/tasks/create', task.create);
 app.post('/users/:user_id/tasks/:task_id/destroy', task.destroy);
+
+app.post('/contacts', home.sendmsg);
 
 
 db
