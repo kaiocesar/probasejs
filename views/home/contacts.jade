@@ -8,6 +8,8 @@ block content
 	div(class="container")
 		h1	Contacts
 
+		h4=message
+
 		form(class="form", method="post", action="/contacts")
 			div(class="row")
 				div(class="form-group")
@@ -20,6 +22,12 @@ block content
 					div(class="col-md-6 col-xs-12")
 						label Email
 						input(type="text",name="email", class="form-control")
+
+			div(class="row")
+				div(class="form-group")
+					div(class="col-md-6 col-xs-12")
+						label Subject
+						input(name="subject", class="form-control", type="text")
 
 			div(class="row")							
 				div(class="form-group")

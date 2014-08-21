@@ -22,6 +22,12 @@ app.use(app.router);
 app.use(express.static(path.join(__dirname, 'public')));
 
 
+// app.use(function(req, res, next){
+// 	req.session.message = req.session.message || { error: [], success: [], info: []};
+// 	app.locals.message = req.session.message;
+// });
+
+
 if ('development' === app.get('env')) {
 	app.use(express.errorHandler());
 }
